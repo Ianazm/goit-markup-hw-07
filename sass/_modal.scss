@@ -1,0 +1,193 @@
+.backdrop {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.2);
+  top: 0;
+  transition: opacity var(--effect-hover-focus-transition),
+    visibility var(--effect-hover-focus-transition);
+}
+
+.backdrop.is-hidden .modal {
+  transform: scale(1.5) rotate(180deg) translate(-1000px);
+  transition: transform var(--effect-hover-focus-transition)
+    cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal {
+  width: 528px;
+  min-height: 581px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 40px;
+  transform: scale(1) rotate(180deg) translate(-1000px);
+  transform: translate(-50%, -50%);
+
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  transition: transform var(--effect-hover-focus-transition)
+    cubic-bezier(0.4, 0, 0.2, 1);
+}
+/*Внутренності модалки*/
+
+.label-modal {
+  width: 448px;
+  /*height: 40px;*/
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4px;
+
+  font-size: 12px;
+  line-height: 1.16;
+
+  letter-spacing: 0.01em;
+
+  color: #757575;
+}
+
+.modal-input {
+  width: 100%;
+  height: 40px;
+  padding: 0 15px;
+  padding-left: 44px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+  transition: var(--effect-hover-focus-transition);
+}
+
+.modal-input:focus {
+  border: 1px solid #2196f3;
+  border-radius: 4px;
+}
+
+.textarea::placeholder {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  opacity: 0.5;
+
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 12px;
+}
+
+.textarea-modal {
+  width: 100%;
+  height: 120px;
+
+  resize: none;
+  padding: 12px 16px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  outline: none;
+}
+
+.textarea-modal:focus {
+  border: 1px solid #2196f3;
+  border-radius: 4px;
+}
+
+.modal-field {
+  margin-bottom: 10px;
+}
+
+.modal-field:focus {
+  border: 1px solid #2196f3;
+  border-radius: 4px;
+}
+
+.input-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: var(--effect-hover-focus-transition);
+}
+
+.input-wrap {
+  position: relative;
+}
+
+.input-wrap .input-icon:focus {
+  fill: #188ce8;
+}
+
+.modal-input:focus + .input-icon {
+  fill: #188ce8;
+}
+
+.check-text {
+  font-size: 14px;
+  line-height: 1.71;
+  display: flex;
+  letter-spacing: 0.03em;
+  align-items: center;
+  color: #757575;
+  margin-bottom: 30px;
+}
+
+.check-item {
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 14px;
+  margin-right: 7px;
+}
+
+.check-icon {
+  fill: white;
+}
+
+.modal-check:checked + .check-text .check-item {
+  background-color: var(--link-hover-color);
+  border: none;
+}
+
+.modal-link {
+  text-decoration: underline;
+}
+
+/*кнопка закриття модалкі------------------*/
+
+.modal-close {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  cursor: pointer;
+
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: transform var(--effect-hover-focus-transition)
+    cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close:hover .modal-close-icon {
+  fill: #2196f3;
+}
