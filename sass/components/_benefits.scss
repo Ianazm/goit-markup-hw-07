@@ -1,0 +1,64 @@
+div {
+  .work {
+    padding: 94px auto;
+  }
+}
+.section.no-padding {
+  padding-bottom: 0;
+}
+
+.work {
+  .benefits-icon {
+    border: 0px solid;
+    background: #f5f4fa;
+    border-radius: 4px;
+    width: 270px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+}
+.benefits {
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .item {
+    width: 270px;
+    justify-content: center;
+    &:not(:last-child) {
+    margin-right: 30px;
+  }
+  }
+  h3 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  p {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+  & .one {
+  left: 215px;
+  }
+  & .two {
+    left: 515px;
+  }
+  & .three {
+    left: 815px;
+  }
+  & .four {
+    left: 1115px;
+  }
+}
+
+
+

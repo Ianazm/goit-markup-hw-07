@@ -1,11 +1,11 @@
 header {
   background: #ffffff;
   border-bottom: 1px solid #ececec;
-}
-header .header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 .header-mail,
 .header-tel {
@@ -17,27 +17,29 @@ header .header {
   color: var(--primary-text-color);
   transition: var(--effect-hover-focus-transition) cubic-bezier(0.4, 0, 0.2, 1);
 }
-.list-contacts li:not(:last-child) {
-  margin-right: 50px;
-}
 
 .list-contacts {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @extend %align-list;
   margin-left: auto;
   fill: #757575;
   transition: var(--effect-hover-focus-transition) cubic-bezier(0.4, 0, 0.2, 1);
+  li:not(:last-child) {
+    margin-right: 50px;
+  }
+  svg {
+    margin-right: 10px;
+    transition: var(--effect-hover-focus-transition)
+      cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
-.list-contacts svg {
-  margin-right: 10px;
-  transition: var(--effect-hover-focus-transition) cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.list-contacts .item:hover,
-.list-contacts .item:focus {
-  fill: #2196f3;
+.list-contacts {
+  .item {
+    &:hover,
+    &:focus {
+      fill: #2196f3;
+    }
+  }
 }
 
 .header-tel:hover,
@@ -52,9 +54,12 @@ header .header {
   transition: var(--effect-hover-focus-transition) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.list-nav .current {
-  color: var(--link-hover-color);
+.list-nav {
+  .current {
+    color: var(--link-hover-color);
+  }
 }
+
 .link-nav:focus,
 .link-nav:hover .list-contacts {
   font-weight: 500;

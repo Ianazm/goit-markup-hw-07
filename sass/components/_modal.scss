@@ -8,10 +8,12 @@
     visibility var(--effect-hover-focus-transition);
 }
 
-.backdrop.is-hidden .modal {
-  transform: scale(1.5) rotate(180deg) translate(-1000px);
-  transition: transform var(--effect-hover-focus-transition)
-    cubic-bezier(0.4, 0, 0.2, 1);
+.backdrop.is-hidden {
+  .modal {
+    transform: scale(1.5) rotate(180deg) translate(-1000px);
+    transition: transform var(--effect-hover-focus-transition)
+      cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .modal {
@@ -58,11 +60,10 @@
   border-radius: 4px;
   outline: none;
   transition: var(--effect-hover-focus-transition);
-}
-
-.modal-input:focus {
-  border: 1px solid #2196f3;
-  border-radius: 4px;
+  &:focus {
+    border: 1px solid #2196f3;
+    border-radius: 4px;
+  }
 }
 
 .textarea::placeholder {
@@ -94,20 +95,18 @@
   box-sizing: border-box;
   border-radius: 4px;
   outline: none;
-}
-
-.textarea-modal:focus {
-  border: 1px solid #2196f3;
-  border-radius: 4px;
+  &:focus {
+    border: 1px solid #2196f3;
+    border-radius: 4px;
+  }
 }
 
 .modal-field {
   margin-bottom: 10px;
-}
-
-.modal-field:focus {
-  border: 1px solid #2196f3;
-  border-radius: 4px;
+  &:focus {
+    border: 1px solid #2196f3;
+    border-radius: 4px;
+  }
 }
 
 .input-icon {
@@ -122,8 +121,10 @@
   position: relative;
 }
 
-.input-wrap .input-icon:focus {
-  fill: #188ce8;
+.input-wrap {
+  .input-icon:focus {
+    fill: #188ce8;
+  }
 }
 
 .modal-input:focus + .input-icon {
@@ -180,14 +181,14 @@
   background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @extend %align-list;
 
   transition: transform var(--effect-hover-focus-transition)
     cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close:hover .modal-close-icon {
-  fill: #2196f3;
+.modal-close:hover {
+  .modal-close-icon {
+    fill: #2196f3;
+  }
 }

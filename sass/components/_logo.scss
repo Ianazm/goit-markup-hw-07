@@ -2,12 +2,10 @@
   color: rgb(0, 0, 0);
 }
 
-.main-nav .logo {
-  margin-right: 93px;
-}
-
-.logo {
-  margin: 24px, 0, 25px, 0;
+.main-nav {
+  .logo {
+    margin-right: 93px;
+  }
 }
 
 .logo {
@@ -16,4 +14,6 @@
   font-weight: 700;
   font-size: 26px;
   line-height: 1.14;
+
+  margin: 24px, 0, 25px, 0;
 }

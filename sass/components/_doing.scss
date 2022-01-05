@@ -8,20 +8,23 @@
   margin-bottom: 50px;
 }
 
-.section-work .list {
-  display: flex;
-  justify-content: center;
+.section-work {
+  .list {
+    display: flex;
+    justify-content: center;
+  }
+  .item-work:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
-.section-work .item-work:not(:last-child) {
-  margin-right: 30px;
-}
-
-.title li {
-  position: absolute;
-  width: 370px;
-  height: 294px;
-  top: 1061px;
+.title {
+  li {
+    position: absolute;
+    width: 370px;
+    height: 294px;
+    top: 1061px;
+  }
 }
 
 .item-work {
