@@ -1,17 +1,17 @@
 /*-----------------Портфолио*/
-.list-portfolio {
+.portfolio__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.link-portfolio-wrap {
+.portfolio__link-wrap {
   position: relative;
   overflow: hidden;
   transition: var(--effect-hover-focus-transition) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.link-portfolio-wrap:hover {
+.portfolio__link-wrap:hover {
   .text-img {
     transform: translateY(0);
   }
@@ -38,25 +38,25 @@
   transition: transform var(--effect-hover-focus-transition) linear;
 }
 
-.list-portfolio {
+.portfolio__list {
   li:nth-child(3n + 2) {
     margin-right: 30px;
     margin-left: 30px;
   }
 }
-.list-portfolio {
+.portfolio__list {
   li:nth-child(n + 4) {
     margin-top: 30px;
   }
 }
 
-.link-portfolio:hover,
-.list-portfolio:focus {
+.portfolio__item:hover,
+.portfolio__list:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.link-portfolio {
+.portfolio__item {
   transition: var(--effect-hover-focus-transition) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -66,7 +66,7 @@
   padding: 20px 24px;
 }
 
-.list-portfolio {
+.portfolio__list {
   h2 {
     font-weight: 700;
     font-size: 18px;
@@ -84,7 +84,7 @@
   }
 }
 
-.portfolio-button {
+.nav-portfolio__button {
   font-family: Roboto, sans-serif;
   border-radius: 4px;
   border-width: 0;

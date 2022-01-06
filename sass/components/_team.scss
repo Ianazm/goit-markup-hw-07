@@ -7,7 +7,7 @@
   padding-top: 30px;
 }
 
-.team .title-team {
+.team .team__title {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -16,11 +16,11 @@
   letter-spacing: 0.03em;
 }
 
-.list-team {
+.team__list {
   display: flex;
 }
 
-.item-team h3 {
+.team__item h3 {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -29,7 +29,7 @@
   letter-spacing: 0.03em;
 }
 
-.item-team p {
+.team__item p {
   font-size: 16px;
   line-height: 1.18;
   margin-top: 10px;
@@ -41,36 +41,36 @@
   margin: 0;
 }
 
-.item-team {
+.team__item {
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
-.team .item-team:not(:last-child) {
+.team .team__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.item-team h3 {
+.team__item h3 {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
 }
 
-.masters-social-list {
+.mmasters-social__list {
   display: flex;
   justify-content: center;
 }
 
-.masters-social-item {
+.masters-socia__item {
   width: 44px;
   height: 44px;
   margin-top: 16px;
 }
 
-.masters-social-item:not(:last-child) {
+.masters-socia__item:not(:last-child) {
   margin-right: 10px;
 }
 
@@ -85,12 +85,12 @@
 .masters-social-link:hover,
 .masters-social-link:focus {
   background: #2196f3;
-  .masters-social-icon {
+  .masters-social__icon {
     fill: #ffffff;
   }
 }
 
-.masters-social-icon {
+.masters-social__icon {
   fill: #afb1b8;
   transition: var(--effect-hover-focus-transition) cubic-bezier(0.4, 0, 0.2, 1);
 }

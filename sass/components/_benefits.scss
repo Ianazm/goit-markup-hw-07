@@ -1,5 +1,5 @@
 div {
-  .work {
+  .section-benefits {
     padding: 94px auto;
   }
 }
@@ -7,8 +7,8 @@ div {
   padding-bottom: 0;
 }
 
-.work {
-  .benefits-icon {
+.section-benefits {
+  .benefits__icon {
     border: 0px solid;
     background: #f5f4fa;
     border-radius: 4px;
@@ -20,17 +20,18 @@ div {
     margin-bottom: 30px;
   }
 }
+
 .benefits {
-  .list {
+  .benefits__list {
     display: flex;
     flex-wrap: wrap;
   }
-  .item {
+  .benefits__item {
     width: 270px;
     justify-content: center;
     &:not(:last-child) {
-    margin-right: 30px;
-  }
+      margin-right: 30px;
+    }
   }
   h3 {
     font-weight: 700;
@@ -46,19 +47,16 @@ div {
     line-height: 1.71;
     letter-spacing: 0.03em;
   }
-  & .one {
-  left: 215px;
+  & .benefits__one {
+    left: 215px;
   }
-  & .two {
+  & .benefits__two {
     left: 515px;
   }
-  & .three {
+  & .benefits__three {
     left: 815px;
   }
-  & .four {
+  & .benefits__four {
     left: 1115px;
   }
 }
-
-
-

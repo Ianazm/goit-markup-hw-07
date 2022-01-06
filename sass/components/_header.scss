@@ -7,8 +7,8 @@ header {
     justify-content: space-between;
   }
 }
-.header-mail,
-.header-tel {
+.header-contacts__mail,
+.header-contacts__tel {
   font-style: 400;
   font-weight: 500;
   font-size: 14px;
@@ -18,7 +18,7 @@ header {
   transition: var(--effect-hover-focus-transition) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.list-contacts {
+.header-contacts__list {
   @extend %align-list;
   margin-left: auto;
   fill: #757575;
@@ -33,8 +33,8 @@ header {
   }
 }
 
-.list-contacts {
-  .item {
+.header-contacts__list {
+  .header-contacts__item {
     &:hover,
     &:focus {
       fill: #2196f3;
@@ -42,25 +42,25 @@ header {
   }
 }
 
-.header-tel:hover,
-.header-tel:focus,
-.header-mail:hover,
-.header-mail:focus {
+.header-contacts__tel:hover,
+.header-contacts__tel:focus,
+.header-contacts__mail:hover,
+.header-contacts__mail:focus {
   color: var(--link-hover-color);
 }
 
-.header-tel,
-.header-mail {
+.header-contacts__tel,
+.header-contacts__mail {
   transition: var(--effect-hover-focus-transition) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.list-nav {
+.main-nav__list {
   .current {
     color: var(--link-hover-color);
   }
 }
 
-.link-nav:focus,
-.link-nav:hover .list-contacts {
+.main-nav__link:focus,
+.main-nav__link:hover .header-contacts__list {
   font-weight: 500;
 }

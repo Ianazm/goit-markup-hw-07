@@ -1,4 +1,4 @@
-.title.work {
+.container-work > .work__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.14;
@@ -8,17 +8,17 @@
   margin-bottom: 50px;
 }
 
-.section-work {
-  .list {
+.work {
+  .work__list {
     display: flex;
     justify-content: center;
   }
-  .item-work:not(:last-child) {
+  .work__item:not(:last-child) {
     margin-right: 30px;
   }
 }
 
-.title {
+.work__title {
   li {
     position: absolute;
     width: 370px;
@@ -27,7 +27,7 @@
   }
 }
 
-.item-work {
+.work__item {
   position: relative;
 }
 
