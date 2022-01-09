@@ -156,6 +156,8 @@ header .header {
 .hero-container {
   display: flex;
   flex-direction: column;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -291,6 +293,10 @@ div .section-benefits {
 
 .work__item {
   position: relative;
+}
+
+.work__title {
+  margin-bottom: 50px;
 }
 
 .text-img-work {
@@ -594,6 +600,7 @@ footer .container {
 
 .btn-subscription {
   margin-right: 12px;
+  display: flex;
 }
 
 .input-subscription {
